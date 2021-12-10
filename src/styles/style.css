@@ -1,63 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(to right top, red, blue, green);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+body {
+  background-image: linear-gradient(
+    to right top,
+    rgb(255, 102, 0),
+    rgb(76, 76, 189),
+    rgb(255, 43, 237)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .main {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
-.slvP {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
+.intro{
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200 !important;
 
 }
+@media (max-width: 493px) {
+    .intro{
+        font-size: calc(4vw - 8%);
+    }
+    .selectVoice{
+        font-size: calc(5vw - 4%);
+
+    }
+    #voiceList{
+        /* width: calc(5vw - 8%); */
+        padding: 50px;
+        width: 200px;
+
+    }
+    #txtInput{
+        width: 200px;
+    }
+}
+.slvP {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
 .btns-parent {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 #voiceList {
-    padding: 10px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    font-size: 15px;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
 }
 #txtInput {
-    padding: 50px;
-    margin-top: 20px;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 187, 0);
-    color: white;
-    border-radius: 6px;
+  padding: 50px;
+  margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  border-radius: 6px;
+  font-family: 'Roboto Mono', monospace;
 }
 #btnSpeak {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: 0.5s;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s;
 }
-#btnSpeak:hover{
-    background-color: rgb(187, 187, 187);
-    color: black;
-    border-radius: 10px;
+#btnSpeak:hover {
+  background-color: rgb(187, 187, 187);
+  color: black;
+  border-radius: 10px;
 }
