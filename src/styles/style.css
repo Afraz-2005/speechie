@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, red, blue, green);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.slvP {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.btns-parent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#voiceList {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#txtInput {
+    padding: 50px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 187, 0);
+    color: white;
+    border-radius: 6px;
+}
+#btnSpeak {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#btnSpeak:hover{
+    background-color: rgb(187, 187, 187);
+    color: black;
+    border-radius: 10px;
+}
