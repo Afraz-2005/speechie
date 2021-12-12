@@ -8,10 +8,7 @@
 }
 body {
   background-image: linear-gradient(
-    to right top,
-    rgb(255, 102, 0),
-    rgb(76, 76, 189),
-    rgb(255, 43, 237)
+    to right top, blue, rgb(255, 74, 174), cyan
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +26,7 @@ body {
   flex-wrap: wrap;
 }
 .intro{
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -71,7 +68,7 @@ body {
 #voiceList {
   padding: 10px;
   border: none;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.651);
   color: white;
   border-radius: 5px;
   font-size: 15px;
@@ -79,9 +76,9 @@ body {
 #txtInput {
   padding: 50px;
   margin-top: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.61);
   border: 2px solid rgb(0, 0, 0);
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 6px;
   font-family: 'Roboto Mono', monospace;
 }
@@ -90,7 +87,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.623);
   color: white;
   font-family: 'Raleway', sans-serif;
   border: none;
@@ -99,7 +96,14 @@ body {
   transition: 0.5s;
 }
 #btnSpeak:hover {
-  background-color: rgb(187, 187, 187);
+  background-color: rgba(255, 255, 255, 0.541);
   color: black;
   border-radius: 10px;
+}
+.hr {
+  background-image: linear-gradient(to right, rgb(0, 255, 255), rgb(255, 0, 221));
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
 }

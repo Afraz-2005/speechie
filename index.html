@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/styles/style.css">
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./src/images/3512879.png" alt="" width="40" class="logo" />
+        </a>
+      </div>
+    </nav>
     <div class="main">
-        <div class="intro">
-            <h1>Text To Speech Converter</h1>
+      <div class="header">
+        <p>Welcome to</p>
+        <br />
+        <h1>Speechie</h1>
+        <br /><br />
+        <h3>Built <span>simply</span> to be used <span>simply</span>.</h3>
+        <br /><br />
+        <div class="btn1">
+          <a href="./TextToSpeech.html">Text to speech converter</a>
+          <a href="./translater.html" class="a2">Translater</a>
         </div>
+      </div>
+      <div class="blob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#6495ED"
+            d="M40.2,-48.2C52.2,-37.8,62,-25.3,63.1,-12.1C64.3,1,56.7,14.7,48.4,26.9C40.1,39.1,31.1,49.8,18,58.5C5,67.1,-12.1,73.6,-23.5,68C-34.9,62.4,-40.7,44.6,-49.5,28.8C-58.3,13.1,-70.2,-0.7,-72.4,-17C-74.6,-33.3,-67.1,-52.1,-53.4,-62.2C-39.7,-72.3,-19.8,-73.5,-2.9,-70.1C14.1,-66.7,28.2,-58.6,40.2,-48.2Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
     </div>
-    <br>
-
-    
-    <div class="slvP">
-        <div class="selectVoice">
-            <h2>Select Voice </h2><br>
-            <select id='voiceList'></select> <br><br>
-        </div>
-        
-    </div>
-
-    <div class="btns-parent">
-        <div class="btns">
-            <input id='txtInput' placeholder="Type here...."/> <br><br>    
-            <button id='btnSpeak'>Speak!</button>
-        </div>
-    </div>
-
-
-    <script src="./src/scripts/app.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
