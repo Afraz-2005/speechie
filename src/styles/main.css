@@ -104,17 +104,7 @@ nav a h3{
         margin: 10px;
     }
 }
-@media (max-width: 676px) {
-    .header p{
-        font-size: calc(7vw - 1%);
-    }
-    .header h1{
-        font-size: calc(20vw - 1%);
-    }
-    .header h3{
-        font-size: calc(6vw - 1%);
-    }
-}
+
 @media (max-width: 344px) {
     .btn1 a{
         display: block;
